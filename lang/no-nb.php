@@ -16,4 +16,5 @@ $_lang["email"] = "Epost";
 $_lang["os"] = "Operativsystem";
 $_lang["browser"] = "Nettleser";
 $_lang["screen"] = "Skjermoppløsning";
+$_lang["flash"] = "Flash";
 ?>

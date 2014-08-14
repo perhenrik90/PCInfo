@@ -36,6 +36,10 @@
      <p><?php echo $_lang["screen"];?></p>
      <input name="screen" id="screen"></input>
 </div>
+<div class="inputRegion">
+     <p><?php echo $_lang["flash"];?></p>
+     <input name="screen" id="flash"></input>
+</div>
      <input type="submit"></input>
 </form>
 
