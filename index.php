@@ -28,28 +28,34 @@
 
 <!-- Computer information -->
 <div class="inputRegion">
+     <img src="img/basic_compass.svg" class="fieldLogo"></img>
      <p><?php echo $_lang["browser"];?></p>
      <input name="browser" id="browser" readonly></input>
 </div>
 
 <div class="inputRegion">
+     <img src="img/basic_gear.svg" class="fieldLogo"></img>
      <p><?php echo $_lang["os"];?></p>
      <input name="os" id="os" readonly></input>
 </div>
 
 <div class="inputRegion">
+     <img src="img/basic_display.svg" class="fieldLogo"></img>
      <p><?php echo $_lang["screen"];?></p>
      <input name="screen" id="screen" readonly></input>
 </div>
 <div class="inputRegion">
+     <img src="img/basic_magnifier_plus.svg" class="fieldLogo"></img>
      <p><?php echo $_lang["flash"];?></p>
      <input name="flash" id="flash" readonly></input>
 </div>
 <div class="inputRegion">
+     <img src="img/cookie.svg" class="fieldLogo"></img>
      <p><?php echo $_lang["cookie"];?></p>
      <input name="cookie" id="cookie" readonly></input>
 </div>
 <div class="inputRegion">
+     <img src="img/basic_message.svg" class="fieldLogo"></img>
      <p><?php echo $_lang["comment"];?></p>
      <textarea name="comment" id="comment"></textarea>
 </div>
