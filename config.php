@@ -5,7 +5,7 @@
  * @author Per-Henrik Kvalnes
  *******************************/
 
-$config["sendto"] = "";
+$config["sendto"] = "per-henrik.kvalnes@nordlandssykehuset.no";
 
 /** the site to escape to when finished **/
 $config["escapesite"] = "";
