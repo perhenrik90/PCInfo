@@ -17,4 +17,11 @@ function updatePCInfo()
     inputOS = document.getElementById("os");
     inputOS.value = oscpu;
     inputOS.disabled = true;
+
+    screenString = window.screen.width;
+    screenString += " x "+window.screen.height;
+    console.log("Screen: "+screenString);
+    inputOS = document.getElementById("screen");
+    inputOS.value = screenString;
+    inputOS.disabled = true;
 }

@@ -23,13 +23,18 @@
      <input name="name"></input>
 </div>
 
+<!-- Computer information -->
 <div class="inputRegion">
      <p><?php echo $_lang["browser"];?></p>
-     <input name="os" id="browser"></input>
+     <input name="browser" id="browser"></input>
 </div>
 <div class="inputRegion">
      <p><?php echo $_lang["os"];?></p>
      <input name="os" id="os"></input>
+</div>
+<div class="inputRegion">
+     <p><?php echo $_lang["screen"];?></p>
+     <input name="screen" id="screen"></input>
 </div>
      <input type="submit"></input>
 </form>
