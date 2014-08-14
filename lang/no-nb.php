@@ -22,4 +22,5 @@ $_lang["cookie"] = "Cookie";
 
 /** strings for sendt mail **/
 $_lang["mailsendt"] = "Du har registrert følgende sak";
+$_lang["mailheader"] = "Klientinformasjon for ";
 ?>

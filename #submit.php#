@@ -37,14 +37,7 @@ $cookie = $_POST["cookie"];
 $comment = $_POST["comment"];
 
 $name = $_POST["name"];
-$fromMail =  $_POST["email"];
-
-
-/***********************
- * Generate mail body 
- **********************/
-$mailBody = "<html><body>";
-$mailBody .= "<h2>$emailHeaderString $name</h2>";
+ $name</h2>";
 $mailBody .= "<table>";
 
 $mailBody .= "<tr>";
@@ -100,7 +93,7 @@ $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=utf8\r\n";
 $mailTo = $config["sendto"];
 
-mail($mailTo, "$emailHeaderString $name", $mailBody, $headers);
+mail($mailTo, "$mailHeaderString $name", $mailBody, $headers);
 
 /************************
  * Display sendt mail
