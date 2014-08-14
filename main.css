@@ -20,10 +20,12 @@ h1
     position:fixed;
     left:30%;
     right:30%;
+    bottom:5px;
+    top:100px;
     background:#FAFAFA;
     border:2px solid #003283; 
     border-radius:5px;
-
+    overflow-y:scroll;
     
 }
 .inputRegion
@@ -46,6 +48,7 @@ h1
 .inputRegion input
 {
     font-size:20px;
+    width:90%;
 }
 
 #submit
@@ -53,6 +56,11 @@ h1
     font-size:20px;
 }
 
+textarea
+{
+    width:90%;
+    height:200px;
+}
 
 /************************
  * Css for submit site
