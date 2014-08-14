@@ -6,7 +6,7 @@
  *******************************/
 
 /* where are the support mail sendt to? ***/
-$config["sendto"] = "per-henrik.kvalnes@nordlandssykehuset.no";
+$config["sendto"] = "";
 
 /** the site to escape to when finished **/
 $config["escapesite"] = "http://www.google.com";
