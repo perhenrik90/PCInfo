@@ -11,8 +11,16 @@
 
 <body>
 <?php
-$browser = get_browser();
-var_dump($brwoser);
+
+$os = $_POST["os"];
+$browser = $_POST["browser"];
+$screen = $_POST["screen"];
+$flash = $_POST["flash"];
+
+$name = $_POST["name"];
+$fromMail $_POST["email"];
+
+var_dump($_POST);
 ?>
 </div>
 </form>
