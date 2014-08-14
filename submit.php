@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta charset="utf8"></meta>
+   <META http-equiv=Content-Type content="text/html; charset=utf-8"></meta>
    <link type="text/css" rel="stylesheet" href="main.css"></link>
    <?php
    include("config.php");
