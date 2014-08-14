@@ -5,7 +5,8 @@
  * @author Per-Henrik Kvalnes
  *******************************/
 
-$config["sendto"] = "per-henrik.kvalnes@nordlandssykehuset.no";
+/* where are the support mail sendt to? ***/
+$config["sendto"] = "";
 
 /** the site to escape to when finished **/
 $config["escapesite"] = "";
