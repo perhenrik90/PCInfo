@@ -17,11 +17,13 @@
 
 <form method="post" action="submit.php">
 <div class="inputRegion">
+     <img src="img/basic_target.svg" class="fieldLogo"></img>
      <p><?php echo $_lang["name"];?></p>
      <input name="name"></input>
 </div>
 
 <div class="inputRegion">
+     <img src="img/basic_mail_multiple.svg" class="fieldLogo"></img>
      <p><?php echo $_lang["email"];?></p>
      <input name="email"></input>
 </div>
