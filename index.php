@@ -23,37 +23,43 @@
 
 <form method="post" action="submit.php">
 <div class="inputRegion">
-     <img src="img/basic_target.svg" class="fieldLogo"></img>
+     <img xlink:href="img/basic_target.svg" 
+     src="img/basic_target.png" class="fieldLogo"></img>
      <p><?php echo $_lang["name"];?></p>
      <input name="name"></input>
 </div>
 
 <div class="inputRegion">
-     <img src="img/basic_mail_multiple.svg" class="fieldLogo"></img>
+     <img xlink:href="img/basic_mail_multiple.svg"
+     src="img/basic_mail_multiple.png" class="fieldLogo"></img>
      <p><?php echo $_lang["email"];?></p>
      <input name="email"></input>
 </div>
 
 <!-- Computer information -->
 <div class="inputRegion">
-     <img src="img/basic_compass.svg" class="fieldLogo"></img>
+     <img xlink:href="img/basic_compass.svg" 
+     src="img/basic_compass.png" class="fieldLogo"></img>
      <p><?php echo $_lang["browser"];?></p>
      <input name="browser" id="browser" readonly></input>
 </div>
 
 <div class="inputRegion">
-     <img src="img/basic_gear.svg" class="fieldLogo"></img>
+     <img xlink:href="img/basic_gear.svg" 
+     src="img/basic_gear.png" class="fieldLogo"></img>
      <p><?php echo $_lang["os"];?></p>
      <input name="os" id="os" readonly></input>
 </div>
 
 <div class="inputRegion">
-     <img src="img/basic_display.svg" class="fieldLogo"></img>
+     <img xlink:href="img/basic_display.svg" 
+     src="img/basic_display.png" class="fieldLogo"></img>
      <p><?php echo $_lang["screen"];?></p>
      <input name="screen" id="screen" readonly></input>
 </div>
 <div class="inputRegion">
-     <img src="img/basic_magnifier_plus.svg" class="fieldLogo"></img>
+     <img xlink:href="img/basic_magnifier_plus.svg" 
+     src="img/basic_magnifier_plus.png" class="fieldLogo"></img>
      <p><?php echo $_lang["flash"];?></p>
      <input name="flash" id="flash" readonly></input>
 </div>
@@ -63,7 +69,8 @@
      <input name="cookie" id="cookie" readonly></input>
 </div>
 <div class="inputRegion">
-     <img src="img/basic_message.svg" class="fieldLogo"></img>
+     <img xlink:href="img/basic_message.svg" 
+     src="img/basic_message.png" class="fieldLogo"></img>
      <p><?php echo $_lang["comment"];?></p>
      <textarea name="comment" id="comment"></textarea>
 </div>
