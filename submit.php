@@ -10,20 +10,10 @@
 </head>
 
 <body>
-<h1><?php echo $_lang["header"];?></h1>
-
-<form method="post" action="submit.php">
-<div class="inputRegion">
-     <p><?php echo $_lang["name"];?></p>
-     <input name="name"></input>
-</div>
-<div class="inputRegion">
-     <p><?php echo $_lang["email"];?></p>
-     <input name="name"></input>
-</div>
-<div class="inputRegion">
-     <p></p>
-     <input name="name"></input>
+<?php
+$browser = get_browser();
+var_dump($brwoser);
+?>
 </div>
 </form>
 </body>
