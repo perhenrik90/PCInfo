@@ -46,9 +46,18 @@
      <input name="flash" id="flash" readonly></input>
 </div>
 <div class="inputRegion">
+     <p><?php echo $_lang["cookie"];?></p>
+     <input name="cookie" id="cookie" readonly></input>
+</div>
+<div class="inputRegion">
+     <p><?php echo $_lang["comment"];?></p>
+     <textarea name="comment" id="comment"></textarea>
+</div>
+<div class="inputRegion">
      <input type="submit" id="submit"
      value=<?php echo "\"".$_lang["submit"]."\"";?>></input>
 </div>
+
 </form>
 </div>
 

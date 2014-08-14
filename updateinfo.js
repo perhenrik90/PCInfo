@@ -25,8 +25,22 @@ function updatePCInfo()
     flashString = getFlashVersion();
     inputFlash = document.getElementById("flash");
     inputFlash.value = flashString;
+
+
+    cookieValue = isCookieEnabeled();
+    cookie = document.getElementById("cookie");
+    cookie.value = cookieValue;
 }
 
+// check for cookie 
+function isCookieEnabeled()
+{
+    if(navigator.cookieEnabled)
+    {
+	return true;
+    }
+    return false;
+}
 
 
 
