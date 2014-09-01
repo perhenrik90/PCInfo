@@ -14,6 +14,7 @@
 </head>
 
 <body onload="updatePCInfo();">
+<img id="logo" src=<?php echo $config["logo"];?>></img>
 <h1><?php echo $_lang["header"];?></h1>
 
 <div id="blanket">
