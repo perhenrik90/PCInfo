@@ -12,11 +12,14 @@
 </head>
 
 <body>
+<img id="logo" src=<?php echo $config["logo"];?>></img>
 <?php
   /*************************************
    * Submit and sendmail to endpoint
    * @author Per-Henrik Kvalnes
    ************************************/
+
+
 
 /** setup language strings **/
 $nameString = $_lang["name"];
