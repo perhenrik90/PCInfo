@@ -20,4 +20,5 @@ $_lang["flash"] = "Flash";
 
 /** strings for sendt mail **/
 $_lang["mailsendt"] = "Du har registrert følgende sak";
+$_lang["mailheader"] = "Klient informasjon for ";
 ?>

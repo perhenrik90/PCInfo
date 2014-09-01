@@ -5,6 +5,7 @@
    <link type="text/css" rel="stylesheet" href="main.css"></link>
    <?php
    include("config.php");
+   $lang = $config["lang"];
    $loaded = include("lang/$lang.php");
    if(!$loaded){ include("lang/en.php");}
 ?>
@@ -20,6 +21,7 @@
 /** setup language strings **/
 $nameString = $_lang["name"];
 $emailString =$_lang["email"];
+$emailHeaderString = $_lang["mailheader"];
 $osString = $_lang["os"];
 $browserString = $_lang["browser"];
 $screenString = $_lang["screen"];
@@ -39,7 +41,7 @@ $fromMail =  $_POST["email"];
  * Generate mail body 
  **********************/
 $mailBody = "<html><body>";
-$mailBody .= "<h2>Klient info for $name</h2>";
+$mailBody .= "<h2>$emailHeaderString $name</h2>";
 $mailBody .= "<table>";
 
 $mailBody .= "<tr>";
@@ -85,7 +87,7 @@ $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=utf8\r\n";
 $mailTo = $config["sendto"];
 
-mail($mailTo, "Client info for $name", $mailBody, $headers);
+mail($mailTo, "$emailHeaderString $name", $mailBody, $headers);
 
 /************************
  * Display sendt mail

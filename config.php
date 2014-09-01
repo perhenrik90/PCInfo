@@ -9,8 +9,8 @@
 $config["sendto"] = "perhenrik.kvalnes@gmail.com";
 
 
-/** language options ***/
-$config["lang"] = "de";
+/** language options (see directory : lang ) ***/
+$config["lang"] = "no-nb";
 
 /** the site to escape to when finished **/
 $config["escapesite"] = "http://www.google.com";
