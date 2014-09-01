@@ -11,8 +11,12 @@
 
 <body>
 <?php
+  /*************************************
+   * Submit and sendmail to endpoint
+   * @author Per-Henrik Kvalnes
+   ************************************/
 
-  /** setup language strings **/
+/** setup language strings **/
 $nameString = $_lang["name"];
 $emailString =$_lang["email"];
 $osString = $_lang["os"];
@@ -20,6 +24,7 @@ $browserString = $_lang["browser"];
 $screenString = $_lang["screen"];
 $flashString = $_lang["flash"];
 
+/** set up post parameters **/
 $os = $_POST["os"];
 $browser = $_POST["browser"];
 $screen = $_POST["screen"];
@@ -28,8 +33,12 @@ $flash = $_POST["flash"];
 $name = $_POST["name"];
 $fromMail =  $_POST["email"];
 
+
+/***********************
+ * Generate mail body 
+ **********************/
 $mailBody = "<html><body>";
-$mailBody .= "<h1>Klient info for $name</h1>";
+$mailBody .= "<h2>Klient info for $name</h2>";
 $mailBody .= "<table>";
 
 $mailBody .= "<tr>";
@@ -65,6 +74,10 @@ $mailBody .= "</tr>";
 $mailBody .= "</table>";
 $mailBody .= "</body></html>";
 
+/*************************
+ * Setup and send mail
+ *************************/
+
 $headers = "From: " . strip_tags($fromMail) . "\r\n";
 $headers .= "Reply-To: ". strip_tags($fromMail) . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
@@ -73,9 +86,24 @@ $mailTo = $config["sendto"];
 
 mail($mailTo, "Client info for $name", $mailBody, $headers);
 
-var_dump($_POST);
+/************************
+ * Display sendt mail
+ ************************/
+$sendtmail = $_lang["mailsendt"];
+echo "<h1>$sendtmail</h1>";
+echo "<div id='viewMail'>";
+echo $mailBody;
+echo "</div>";
 ?>
 </div>
 </form>
+
+<?php
+  /** create escape button **/
+$backLink = $config["escapesite"];
+$backName = $config["escapename"];
+echo "<a href='$backLink'><p id='backLink'>$backName</p></a>";
+?>
+
 </body>
 </html>

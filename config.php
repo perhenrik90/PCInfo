@@ -6,11 +6,11 @@
  *******************************/
 
 /* where are the support mail sendt to? ***/
-$config["sendto"] = "";
+$config["sendto"] = "perhenrik.kvalnes@gmail.com";
 
 /** the site to escape to when finished **/
-$config["escapesite"] = "www.google.com";
-
+$config["escapesite"] = "http://www.google.com";
+$config["escapename"] = "Google";
 
 /** path to logo (do not work right now) **/
 $config["logoPath"] = "";

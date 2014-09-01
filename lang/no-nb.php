@@ -17,4 +17,7 @@ $_lang["os"] = "Operativsystem";
 $_lang["browser"] = "Nettleser";
 $_lang["screen"] = "Skjermoppløsning";
 $_lang["flash"] = "Flash";
+
+/** strings for sendt mail **/
+$_lang["mailsendt"] = "Du har registrert følgende sak";
 ?>
