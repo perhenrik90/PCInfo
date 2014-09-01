@@ -13,7 +13,7 @@ $config["escapesite"] = "http://www.google.com";
 $config["escapename"] = "Google";
 
 /** path to logo (do not work right now) **/
-$config["logoPath"] = "";
+$config["logo"] = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTorH1m7zogCfIW3fc6R_8tRK7iuG_xmQ294U9NQtu0KdsZQmgSBvoV1w";
 
 
 ?>
