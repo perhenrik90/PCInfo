@@ -5,7 +5,8 @@
    <link type="text/css" rel="stylesheet" href="main.css"></link>
    <?php
    include("config.php");
-   include("lang/no-nb.php");
+   $loaded = include("lang/$lang.php");
+   if(!$loaded){ include("lang/en.php");}
 ?>
 </head>
 

@@ -6,7 +6,10 @@
    <script src="updateinfo.js"></script>
    <?php
    include("config.php");
-   include("lang/no-nb.php");
+
+   $lang = $config["lang"];
+   $loaded = include("lang/$lang.php");
+   if(!$loaded){ include("lang/en.php");}
 ?>
 </head>
 

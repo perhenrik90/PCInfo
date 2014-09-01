@@ -8,6 +8,10 @@
 /* where are the support mail sendt to? ***/
 $config["sendto"] = "perhenrik.kvalnes@gmail.com";
 
+
+/** language options ***/
+$config["lang"] = "de";
+
 /** the site to escape to when finished **/
 $config["escapesite"] = "http://www.google.com";
 $config["escapename"] = "Google";
