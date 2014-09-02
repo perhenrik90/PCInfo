@@ -27,6 +27,8 @@ h1
     top:22%;
     left:30%;
     right:30%;
+    bottom:5px;
+    top:100px;
     background:#FAFAFA;
     border:2px solid #003283; 
     border-radius:5px;
@@ -34,13 +36,14 @@ h1
 }
 .inputRegion
 {
+    display:block;
     text-algin:left;
     margin:10px;
     margin-top:0px;
-    width:60%;
+    width:90%;
     margin-left:auto;
     margin-right:auto;
-    padding:10px;
+    padding:20px;
 
 }
 
@@ -53,8 +56,16 @@ h1
 .inputRegion input
 {
     font-size:20px;
+    width:50%;
 }
 
+.fieldLogo
+{
+    float:left;
+    margin-top:20px;
+    margin-right:40px;
+    
+}
 #submit
 {
     font-size:20px;
@@ -67,6 +78,13 @@ h1
 {
     background:#AAA;
 }
+
+textarea
+{
+    width:90%;
+    height:200px;
+}
+
 
 /************************
  * Css for submit site

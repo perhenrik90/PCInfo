@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta charset="utf8"></meta>
+   <META http-equiv=Content-Type content="text/html; charset=utf-8"></meta>
    <link type="text/css" rel="stylesheet" href="main.css"></link>
    <?php
    include("config.php");
@@ -29,12 +29,16 @@ $osString = $_lang["os"];
 $browserString = $_lang["browser"];
 $screenString = $_lang["screen"];
 $flashString = $_lang["flash"];
+$commentString = $_lang["comment"];
+$cookieString = $_lang["cookie"];
 
 /** set up post parameters **/
 $os = $_POST["os"];
 $browser = $_POST["browser"];
 $screen = $_POST["screen"];
 $flash = $_POST["flash"];
+$cookie = $_POST["cookie"];
+$comment = $_POST["comment"];
 
 $name = $_POST["name"];
 $fromMail =  $_POST["email"];
@@ -75,6 +79,16 @@ $mailBody .= "</tr>";
 $mailBody .= "<tr>";
 $mailBody .= "<td>$flashString</td>";
 $mailBody .= "<td>$flash</td>";
+$mailBody .= "</tr>";
+
+$mailBody .= "<tr>";
+$mailBody .= "<td>$cookieString</td>";
+$mailBody .= "<td>$cookie</td>";
+$mailBody .= "</tr>";
+
+$mailBody .= "<tr>";
+$mailBody .= "<td>$commentString</td>";
+$mailBody .= "<td>$comment</td>";
 $mailBody .= "</tr>";
 
 $mailBody .= "</table>";

@@ -6,7 +6,7 @@
  *******************************/
 
 /* where are the support mail sendt to? ***/
-$config["sendto"] = "perhenrik.kvalnes@gmail.com";
+$config["sendto"] = "per-henrik.kvalnes@nordlandssykehuset.no";
 
 
 /** language options (see directory : lang ) ***/

@@ -17,8 +17,10 @@ $_lang["os"] = "Operativsystem";
 $_lang["browser"] = "Nettleser";
 $_lang["screen"] = "Skjermoppløsning";
 $_lang["flash"] = "Flash";
+$_lang["comment"] = "Beskrivelse";
+$_lang["cookie"] = "Cookie";
 
 /** strings for sendt mail **/
 $_lang["mailsendt"] = "Du har registrert følgende sak";
-$_lang["mailheader"] = "Klient informasjon for ";
+$_lang["mailheader"] = "Klientinformasjon for ";
 ?>
