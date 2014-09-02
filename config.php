@@ -6,7 +6,7 @@
  *******************************/
 
 /* where are the support mail sendt to? ***/
-$config["sendto"] = "per-henrik.kvalnes@nordlandssykehuset.no";
+$config["sendto"] = "";
 
 
 /** language options (see directory : lang ) ***/
@@ -16,7 +16,7 @@ $config["lang"] = "en";
 $config["escapesite"] = "http://www.google.com";
 $config["escapename"] = "Google";
 
-/** path to logo (do not work right now) **/
+/** path to logo **/
 $config["logo"] = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTorH1m7zogCfIW3fc6R_8tRK7iuG_xmQ294U9NQtu0KdsZQmgSBvoV1w";
 
 
