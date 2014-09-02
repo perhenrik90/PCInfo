@@ -1,8 +1,9 @@
 PCInfo
 ======
 
-This is a small php script witch sends information about a client`s pc
-to a support email. See config.php to setup your version of PCInfo. 
+PCInfo is a small support system witch sends information about a client pc 
+to a support email. See config.php for setup. 
+
 
 Requirments
 -----------
