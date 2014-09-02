@@ -17,6 +17,8 @@ $_lang["os"] = "OS";
 $_lang["browser"] = "Browser";
 $_lang["screen"] = "Screen Resolution";
 $_lang["flash"] = "Flash";
+$_lang["cookie"] ="Cookie";
+$_lang["comment"] = "Comment";
 
 /** strings for sendt mail **/
 $_lang["mailsendt"] = "You have recorded the following information";
