@@ -15,7 +15,6 @@ Requirments
 Todo list
 ---------
 
-- Check for valid email befor sending
 - Error page 
 - Send icons with the email (?)
 - Better more modern styling 
