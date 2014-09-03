@@ -43,52 +43,65 @@ $comment = $_POST["comment"];
 $name = $_POST["name"];
 $fromMail =  $_POST["email"];
 
+/** check if provided emails are valid **/
+if (!filter_var($emailString, FILTER_VALIDATE_EMAIL)) 
+{
+   // Email is not valid... How should we fail?
+   echo "Email entered in config file is not a valid email.";
+   die;
+}
+if (!empty($fromMail) && !filter_var($fromMail, FILTER_VALIDATE_EMAIL)) 
+{
+   // Email is not valid... How should we fail?
+   echo "The 'from' email du entered is not a valid email.";
+   die;
+}
 
 /***********************
  * Generate mail body 
  **********************/
 $mailBody = "<html><body>";
-$mailBody .= "<h2>$emailHeaderString $name</h2>";
+$mailBody .= "<h2>" . htmlspecialchars($emailHeaderString) . " " . htmlspecialchars($name) . "</h2>";
 $mailBody .= "<table>";
 
 $mailBody .= "<tr>";
-$mailBody .= "<td>$nameString</td>";
-$mailBody .= "<td>$name</td>";
+$mailBody .= "<td>" . htmlspecialchars($nameString) . "</td>";
+$mailBody .= "<td>" . htmlspecialchars($name) . "</td>";
 $mailBody .= "</tr>";
 
 $mailBody .= "<tr>";
-$mailBody .= "<td>$emailString</td>";
-$mailBody .= "<td>$fromMail</td>";
+$mailBody .= "<td>" . htmlspecialchars($emailString) . "</td>";
+$mailBody .= "<td>" . htmlspecialchars($fromMail) . "</td>";
 $mailBody .= "</tr>";
 
 $mailBody .= "<tr>";
-$mailBody .= "<td>$osString</td>";
-$mailBody .= "<td>$os</td>";
+$mailBody .= "<td>" . htmlspecialchars($osString) . "</td>";
+$mailBody .= "<td>" . htmlspecialchars($os) . "</td>";
 $mailBody .= "</tr>";
 
 $mailBody .= "<tr>";
-$mailBody .= "<td>$browserString</td>";
-$mailBody .= "<td>$browser</td>";
+$mailBody .= "<td>" . htmlspecialchars($browserString) . "</td>";
+$mailBody .= "<td>" . htmlspecialchars($browser) . "</td>";
 $mailBody .= "</tr>";
 
 $mailBody .= "<tr>";
-$mailBody .= "<td>$screenString</td>";
-$mailBody .= "<td>$screen</td>";
+$mailBody .= "<td>" . htmlspecialchars($screenString) . "</td>";
+$mailBody .= "<td>" . htmlspecialchars($screen) . "</td>";
 $mailBody .= "</tr>";
 
 $mailBody .= "<tr>";
-$mailBody .= "<td>$flashString</td>";
-$mailBody .= "<td>$flash</td>";
+$mailBody .= "<td>" . htmlspecialchars($flashString) . "</td>";
+$mailBody .= "<td>" . htmlspecialchars($flash) . "</td>";
 $mailBody .= "</tr>";
 
 $mailBody .= "<tr>";
-$mailBody .= "<td>$cookieString</td>";
-$mailBody .= "<td>$cookie</td>";
+$mailBody .= "<td>" . htmlspecialchars($cookieString) . "</td>";
+$mailBody .= "<td>" . htmlspecialchars($cookie) . "</td>";
 $mailBody .= "</tr>";
 
 $mailBody .= "<tr>";
-$mailBody .= "<td>$commentString</td>";
-$mailBody .= "<td>$comment</td>";
+$mailBody .= "<td>" . htmlspecialchars($commentString) . "</td>";
+$mailBody .= "<td>" . htmlspecialchars($comment) . "</td>";
 $mailBody .= "</tr>";
 
 $mailBody .= "</table>";
