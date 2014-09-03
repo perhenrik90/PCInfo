@@ -42,9 +42,10 @@ $comment = $_POST["comment"];
 
 $name = $_POST["name"];
 $fromMail =  $_POST["email"];
+$mailTo = $config["sendto"];
 
 /** check if provided emails are valid **/
-if (!filter_var($emailString, FILTER_VALIDATE_EMAIL)) 
+if (!filter_var($mailTo, FILTER_VALIDATE_EMAIL)) 
 {
    // Email is not valid... How should we fail?
    echo "Email entered in config file is not a valid email.";
@@ -115,7 +116,7 @@ $headers = "From: " . strip_tags($fromMail) . "\r\n";
 $headers .= "Reply-To: ". strip_tags($fromMail) . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=utf8\r\n";
-$mailTo = $config["sendto"];
+
 
 mail($mailTo, "$emailHeaderString $name", $mailBody, $headers);
 
